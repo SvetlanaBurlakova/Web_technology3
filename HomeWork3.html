@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function print(firsName,secondName,age){
+        if (age <= 17){
+            alert(`Привет, ${firsName} ${secondName} - вы школьник`);
+        }
+        else if (age <= 22) {
+            alert(`Привет, ${firsName} ${secondName} - вы абитуриент`);
+        }
+        else if (age <= 65){
+            alert(`Привет, ${firsName} ${secondName} - вы работающий`);
+        }
+        else {
+            alert(`Привет, ${firsName} ${secondName} - вы пенсионер`);
+        }
+    }
+    const firsName = prompt('Введите ваше имя?','Имя');
+    const secondName = prompt('Введите вашу фамилию', 'Фамилия');
+    const age = prompt('введите возраст','Возраст');
+    print(firsName, secondName, age)
+
+</script>
+</body>
+</html>
